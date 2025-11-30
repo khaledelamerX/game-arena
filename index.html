@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Games website</title>
+    <link rel="icon" href="./favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/js/all.min.js"
+      integrity="sha512-6BTOlkauINO65nLhXhthZMtepgJSghyimIalb+crKRPhvhmsCdnIuGcVbR5/aQY2A+260iC1OPy1oCdB6pSSwQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Days+One&display=swap"
+      rel="stylesheet"
+    />
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body class="bg-dark text-light">
+    <!-- COMPONENT: Header -->
+    <header
+      id="header"
+      class="bg-dark border-b border-gray-800 fixed w-full left-0 top-0 z-50"
+    >
+      <div class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+          <div class="flex items-center space-x-8">
+            <div class="text-primary text-xl font-bold">
+              <i class="fa-solid fa-gamepad mr-2"></i>
+              GameArena
+            </div>
+            <nav class="hidden lg:flex items-center space-x-6">
+              <a
+                href="#hero"
+                class="text-light hover:text-primary transition-colors cursor-pointer"
+                >Home</a
+              >
+              <a
+                href="#latest-games"
+                class="text-light hover:text-primary transition-colors cursor-pointer"
+                >OUR GAMES
+              </a>
+              <a
+                href="#what-we-do"
+                class="text-light hover:text-primary transition-colors cursor-pointer"
+                >What We Do</a
+              >
+              <a
+                href="#team-members"
+                class="text-light hover:text-primary transition-colors cursor-pointer"
+                >Our Team</a
+              >
+              <!-- <a
+                href="#upcoming-tournaments"
+                class="text-light hover:text-primary transition-colors cursor-pointer"
+                >Tournaments</a
+              > -->
+              <a
+                href="#contact"
+                class="text-light hover:text-primary transition-colors cursor-pointer"
+                >Contact Us</a
+              >
+            </nav>
+          </div>
+          <div class="flex items-center space-x-4">
+            <button
+              class="hidden lg:block text-light hover:text-primary cursor-pointer"
+            >
+              <i class="fa-regular fa-bell text-lg"></i>
+            </button>
+            <button
+              class="hidden lg:block text-light hover:text-primary cursor-pointer"
+            >
+              <i class="fa-regular fa-message text-lg"></i>
+            </button>
+            <button
+              class="hidden lg:block bg-primary btn-shine text-dark px-6 py-2 rounded-lg font-bold hover:bg-primary/80 transition-all cursor-pointer"
+            >
+              Sign In
+            </button>
+            <!-- Mobile Menu Button -->
+            <button
+              id="mobile-menu-btn"
+              class="lg:hidden text-light hover:text-primary cursor-pointer"
+              data-bs-toggle="collapse"
+              data-bs-target="#mobile-menu"
+              aria-expanded="false"
+              aria-controls="mobile-menu"
+            >
+              <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Menu -->
+      <div
+        id="mobile-menu"
+        class="collapse bg-dark border-t border-gray-800"
+      >
+        <nav class="max-w-7xl mx-auto px-6 py-4 flex flex-col space-y-4">
+          <a
+            href="#hero"
+            class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
+            >Home</a
+          >
+          <a
+            href="#latest-games"
+            class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
+            >OUR GAMES
+          </a>
+          <a
+            href="#what-we-do"
+            class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
+            >What We Do</a
+          >
+          <a
+            href="#team-members"
+            class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
+            >Our Team</a
+          >
+          <a
+            href="#upcoming-tournaments"
+            class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
+            >Tournaments</a
+          >
+          <a
+            href="#contact"
+            class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
+            >Contact Us</a
+          >
+          <div class="flex flex-col space-y-3 pt-4 border-t border-gray-800">
+            <button
+              class="text-light hover:text-primary cursor-pointer text-left"
+            >
+              <i class="fa-regular fa-bell text-lg mr-2"></i> Notifications
+            </button>
+            <button
+              class="text-light hover:text-primary cursor-pointer text-left"
+            >
+              <i class="fa-regular fa-message text-lg mr-2"></i> Messages
+            </button>
+            <button
+              class="bg-primary btn-shine text-dark px-6 py-3 rounded-lg font-bold hover:bg-primary/80 transition-all cursor-pointer text-center"
+            >
+              Sign In
+            </button>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- COMPONENT: Hero Section -->
+      <section
+        id="hero"
+        class="min-h-screen relative bg-cover bg-center md:bg-fixed bg-[linear-gradient(45deg,#0b0e13,#1a1a1a,#0b0e13)] bg-gradient-animated flex items-center pt-30 pb-16"
+      >
+        <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 py-12 md:py-0">
+          <div
+            class="grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 items-center"
+          >
+            <div class="text-center lg:text-left">
+              <h1
+                class="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4 md:mb-6 leading-tight"
+              >
+                THE ULTIMATE
+                <span class="text-primary block">GAMING</span>
+                EXPERIENCE
+              </h1>
+              <p
+                class="text-sm sm:text-base text-gray-300 mb-6 md:mb-8 leading-relaxed max-w-xl mx-auto lg:mx-0"
+              >
+                Join millions of gamers worldwide in the most competitive
+                eSports tournaments. Experience next-level gaming with
+                cutting-edge technology and endless possibilities.
+              </p>
+              <div
+                class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center lg:justify-start"
+              >
+                <button
+                  class="bg-primary btn-shine text-dark px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-sm sm:text-base hover:bg-primary/80 transition-all cursor-pointer"
+                >
+                  Start Gaming Now
+                </button>
+                <button
+                  class="border-2 border-primary btn-shine text-primary px-6 sm:px-8 py-3 sm:py-4 rounded-lg font-bold text-sm sm:text-base hover:bg-primary hover:text-dark transition-all cursor-pointer"
+                >
+                  Watch Tournaments
+                </button>
+              </div>
+            </div>
+            <div class="relative mt-8 lg:mt-0">
+              <div
+                class="bg-linear-to-r from-primary to-green-400 p-1 rounded-2xl"
+              >
+                <img
+                  class="w-full h-64 sm:h-80 md:h-96 object-cover rounded-xl"
+                  src="./assets/latest-games-1.png"
+                  alt="professional esports player gaming setup with RGB keyboard, gaming chair, multiple monitors"
+                />
+              </div>
+              <div
+                class="absolute -bottom-4 -left-4 sm:-bottom-6 sm:-left-6 bg-dark border border-gray-700 p-4 sm:p-6 rounded-lg shadow-xl"
+              >
+                <div class="flex items-center space-x-3 sm:space-x-4">
+                  <i
+                    class="fa-solid fa-trophy text-primary text-lg sm:text-xl"
+                  ></i>
+                  <div>
+                    <p class="text-xs text-gray-400">Active Players</p>
+                    <p class="text-lg sm:text-xl font-bold">2.5M+</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
