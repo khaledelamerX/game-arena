@@ -1,0 +1,65 @@
+/* Custom styles for Game Arena */
+
+body {
+    background-color: #121212;
+    color: #ffffff;
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    background-color: #1e1e1e !important;
+    border-bottom: 2px solid #ff6b6b;
+}
+
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-title, .card-text {
+    color: #ffffff;
+}
+
+.btn-primary {
+    background-color: #ff6b6b;
+    border-color: #ff6b6b;
+}
+
+.btn-primary:hover {
+    background-color: #ff5252;
+    border-color: #ff5252;
+}
+
+.btn-light {
+    background-color: #ffffff;
+    color: #000;
+}
+
+.btn-light:hover {
+    background-color: #e0e0e0;
+}
+
+footer {
+    background-color: #1e1e1e;
+    border-top: 2px solid #ff6b6b;
+}
+
+a {
+    color: #ff6b6b;
+}
+
+a:hover {
+    color: #ff5252;
+}
