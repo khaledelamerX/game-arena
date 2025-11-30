@@ -4,11 +4,21 @@ A replicated version of the Game Arena website from https://game-arena-theta.ver
 
 ## Features
 
-- Responsive design
-- Interactive gaming website
-- Local server setup
+- Responsive design with mobile-first approach
+- Interactive gaming website with smooth animations
+- Bootstrap-powered mobile navigation menu
+- Hero section with gaming setup showcase
+- Latest games carousel
+- What We Do sections
+- Team members display
+- Sponsors marquee
+- Contact form
 
 ## Running Locally
+
+Simply open `index.html` in your browser to view the website.
+
+For a local server (optional):
 
 1. Install dependencies:
    ```bash
@@ -25,15 +35,16 @@ A replicated version of the Game Arena website from https://game-arena-theta.ver
 ## Structure
 
 - `index.html` - Main HTML file
-- `style.css` - Custom styles
-- `script.js` - JavaScript functionality
+- `src/style.css` - Custom Tailwind CSS styles
+- `src/index.html` - Alternative HTML file (src version)
 - `assets/` - Images and other assets
 - `favicon.png` - Favicon
+- `package.json` - Node.js dependencies
 
 ## Technologies Used
 
-- HTML
-- CSS
-- JavaScript
+- HTML5
+- Tailwind CSS
+- Bootstrap 5 (CSS only, for responsive utilities)
 - Font Awesome
-- Google Fonts
+- Google Fonts (Chakra Petch, Days One)
