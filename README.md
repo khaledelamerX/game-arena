@@ -35,8 +35,9 @@ For a local server (optional):
 ## Structure
 
 - `index.html` - Main HTML file
-- `src/style.css` - Custom Tailwind CSS styles
+- `style.css` - Custom CSS styles
 - `src/index.html` - Alternative HTML file (src version)
+- `src/style.css` - Alternative CSS file
 - `assets/` - Images and other assets
 - `favicon.png` - Favicon
 - `package.json` - Node.js dependencies
@@ -44,7 +45,7 @@ For a local server (optional):
 ## Technologies Used
 
 - HTML5
-- Tailwind CSS
-- Bootstrap 5 (CSS only, for responsive utilities)
+- CSS3
+- Bootstrap 5
 - Font Awesome
 - Google Fonts (Chakra Petch, Days One)
