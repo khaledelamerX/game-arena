@@ -25,7 +25,7 @@
     <!-- COMPONENT: Header -->
     <header
       id="header"
-      class="bg-dark border-b border-gray-800 fixed w-full left-0 top-0 z-50"
+      class="bg-dark border-bottom border-secondary position-fixed w-100 start-0 top-0 z-50"
     >
       <div class="max-w-7xl mx-auto px-6 py-4">
         <div class="flex items-center justify-between">
@@ -34,7 +34,7 @@
               <i class="fa-solid fa-gamepad mr-2"></i>
               GameArena
             </div>
-            <nav class="hidden lg:flex items-center space-x-6">
+            <nav class="d-none d-lg-flex align-items-center gap-3">
               <a
                 href="#hero"
                 class="text-light hover:text-primary transition-colors cursor-pointer"
@@ -62,7 +62,7 @@
               > -->
               <a
                 href="#contact"
-                class="text-light hover:text-primary transition-colors cursor-pointer"
+                class="text-light hover-text-primary transition-all cursor-pointer"
                 >Contact Us</a
               >
             </nav>
@@ -74,19 +74,19 @@
               <i class="fa-regular fa-bell text-lg"></i>
             </button>
             <button
-              class="hidden lg:block text-light hover:text-primary cursor-pointer"
+              class="d-none d-lg-block text-light hover-text-primary cursor-pointer"
             >
               <i class="fa-regular fa-message text-lg"></i>
             </button>
             <button
-              class="hidden lg:block bg-primary btn-shine text-dark px-6 py-2 rounded-lg font-bold hover:bg-primary/80 transition-all cursor-pointer"
+              class="d-none d-lg-block bg-primary btn-shine text-dark px-3 py-2 rounded font-bold hover-bg-primary transition-all cursor-pointer"
             >
               Sign In
             </button>
             <!-- Mobile Menu Button -->
             <button
               id="mobile-menu-btn"
-              class="lg:hidden text-light hover:text-primary cursor-pointer"
+              class="d-lg-none text-light hover-text-primary cursor-pointer"
               data-bs-toggle="collapse"
               data-bs-target="#mobile-menu"
               aria-expanded="false"
@@ -101,9 +101,9 @@
       <!-- Mobile Navigation Menu -->
       <div
         id="mobile-menu"
-        class="collapse bg-dark border-t border-gray-800"
+        class="collapse bg-dark border-top border-secondary"
       >
-        <nav class="max-w-7xl mx-auto px-6 py-4 flex flex-col space-y-4">
+        <nav class="container-fluid px-3 py-3 d-flex flex-column gap-3">
           <a
             href="#hero"
             class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
@@ -131,7 +131,7 @@
           >
           <a
             href="#contact"
-            class="mobile-nav-link text-light hover:text-primary transition-colors cursor-pointer py-2"
+            class="mobile-nav-link text-light hover-text-primary transition-all cursor-pointer py-2"
             >Contact Us</a
           >
           <div class="flex flex-col space-y-3 pt-4 border-t border-gray-800">
@@ -141,12 +141,12 @@
               <i class="fa-regular fa-bell text-lg mr-2"></i> Notifications
             </button>
             <button
-              class="text-light hover:text-primary cursor-pointer text-left"
+              class="text-light hover-text-primary cursor-pointer text-start"
             >
               <i class="fa-regular fa-message text-lg mr-2"></i> Messages
             </button>
             <button
-              class="bg-primary btn-shine text-dark px-6 py-3 rounded-lg font-bold hover:bg-primary/80 transition-all cursor-pointer text-center"
+              class="bg-primary btn-shine text-dark px-3 py-3 rounded font-bold hover-bg-primary transition-all cursor-pointer text-center"
             >
               Sign In
             </button>
